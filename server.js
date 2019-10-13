@@ -11,13 +11,13 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
-/*
 app.use('/', express.static(path.join(__dirname, 'build')));
-*/
 
+/*
 app.get('/', (req,res) => {
     res.send("working");
 });
+*/
 
 io.on('connection', socket => {
     socket.on('join', ({ name, room }, callback) => {
