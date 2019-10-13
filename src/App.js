@@ -8,7 +8,7 @@ import Chat from './components/Chat/Chat';
 let socket;
 
 const App = () => {
-    const ENDPOINT = 'localhost:5000';
+    const ENDPOINT = '/';
     socket = io(ENDPOINT);
 
     return (

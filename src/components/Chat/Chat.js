@@ -16,7 +16,7 @@ const Chat = ({ location, socket }) => {
     const [users, setUsers] = useState('');
     const [messages, setMessages] = useState([]);
     const [typing, setTyping] = useState('');
-    const ENDPOINT = 'localhost:5000';
+    const ENDPOINT = '/';
 
     useEffect( () => {
         if(!location.search)
