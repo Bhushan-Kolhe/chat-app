@@ -5,19 +5,13 @@ const path = require('path');
 
 const { addUser, removeUser, getUser, getUsersInRoom, getRooms } = require('./users');
 
-const PORT = 80;
+const PORT = process.env.PORT || 80;
 
 const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
 app.use('/', express.static(path.join(__dirname, 'build')));
-
-/*
-app.get('/', (req,res) => {
-    res.send("working");
-});
-*/
 
 io.on('connection', socket => {
     socket.on('join', ({ name, room }, callback) => {
