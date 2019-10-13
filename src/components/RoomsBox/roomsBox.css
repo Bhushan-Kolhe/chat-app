@@ -1,0 +1,37 @@
+.RoomsContainer {
+    height: 100%;
+}
+
+.RoomBox {
+    margin-right: 20px;
+    height: 80%;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.room {
+    border: none;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    color: #302d2d !important;
+    text-decoration: none;
+    background: #E28413;
+    border-bottom: 6px solid #804805;
+    padding: 20px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.room:active {
+    background-color: rgb(255, 140, 0);
+    border-bottom: 2px solid #ad6104;
+    transform: translateY(4px);
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}

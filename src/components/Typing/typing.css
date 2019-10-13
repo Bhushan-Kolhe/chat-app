@@ -1,0 +1,38 @@
+ .loadingDots{
+    background-color: #2979FF;
+    border-radius: 40px;
+    height: 30px;
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dot1, .dot2, .dot3{
+    margin:auto 2px;
+    background-color: #fff;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+.dot1{
+    animation: dot1L 1s ease-in-out 0.5s    infinite forwards;
+}
+.dot2{
+    animation: dot1L 1s ease-in-out 0.7s    infinite forwards;
+}
+.dot3{
+    animation: dot1L 1s ease-in-out 1s    infinite forwards;
+}
+@keyframes dot1L{
+    0%{
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 1
+    }
+    100%{
+        opacity: 0.4;
+    }
+}
